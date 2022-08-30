@@ -1,4 +1,0 @@
-﻿Nama operator,Deskripsi,Contoh
-||,OR,if (i <= 3 || i != 0)
-!,NOT,if (!isOn)
-&&,AND,if (i >= 1 && i <= 3)

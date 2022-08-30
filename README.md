@@ -1,10 +1,8 @@
 # PBO Dart
 
-- Table of Contents
-
 # Pendahuluan
 
-Dart adalah bahasa yang dioptimalkan untuk klien mengembangkan suatu aplikasi dengan cepat dan berjalan di platform apapun(multi-platform). Framework pengembangan software yang menggunakan bahasa dart adalah framework flutter. 
+Dart adalah bahasa yang dioptimalkan untuk klien mengembangkan suatu aplikasi dengan cepat dan berjalan di platform apapun(multi-platform). Framework pengembangan software yang menggunakan bahasa dart adalah framework flutter.
 
 Selengkapnya : [https://dart.dev/overview](https://dart.dev/overview)
 
@@ -23,7 +21,6 @@ void main() {
 Buka terminal dan ketikan kode berikut :
 
 > dart <file-name>
-> 
 
 ```bash
 dart main.dart
@@ -31,9 +28,9 @@ dart main.dart
 
 Output :
 
-![Untitled](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Untitled.png)
+![](assets/Untitled.png)
 
-Penjelasan : 
+Penjelasan :
 
 ```dart
 void main () {}
@@ -45,15 +42,13 @@ Fungsi `main` adalah fungsi utama yang akan mengeksekusi semua kode yang ditulis
 print("Hello World!");
 ```
 
-`print` merupakan fungsi bawaan dari dart yang akan menampilkan suatu output, dan menambahkan baris baru setelahnya mirip seperti `System.out.println()` pada bahasa java. Kita bisa menghindari pembuatan baris baru dengan menggunakan `stdout.write()`. 
+`print` merupakan fungsi bawaan dari dart yang akan menampilkan suatu output, dan menambahkan baris baru setelahnya mirip seperti `System.out.println()` pada bahasa java. Kita bisa menghindari pembuatan baris baru dengan menggunakan `stdout.write()`.
 
 Selengkapnya tentang `stdout.write()` dan `stdin.readLineSync()`: [https://api.dart.dev/stable/2.15.1/dart-io/Stdout-class.html](https://api.dart.dev/stable/2.15.1/dart-io/Stdout-class.html)
 
 > Jika kalian tidak menggunakan visual studio code, kalian bisa juga menggunakan website bawaan dari dart : [https://dartpad.dev/](https://dartpad.dev/)
-> 
 
 > Atau bisa juga menggunakan software lain seperti IntelJIDEA : [https://www.jetbrains.com/idea/download/#section=windows](https://www.jetbrains.com/idea/download/#section=windows)
-> 
 
 ---
 
@@ -100,7 +95,7 @@ Constant dan final digunakan untuk deklarasi variable yang tidak akan berubah se
 
 ### Constant
 
-constant menggunakan type inference untuk menentukan type datanya. Nilai const harus sudah diketahui dari sebelum program dijalankan dan tidak akan berubah nilainya selama program berjalan. Contoh : 
+constant menggunakan type inference untuk menentukan type datanya. Nilai const harus sudah diketahui dari sebelum program dijalankan dan tidak akan berubah nilainya selama program berjalan. Contoh :
 
 ```dart
 void main() {
@@ -136,7 +131,7 @@ void main() {
 
 # Built-in types
 
-Dart juga mendukung *statically typed*, yaitu ketika variable atau fungsi dideklarasikan, tipe data harus dituliskan juga. Berikut tipe data yang dimiliki oleh dart :
+Dart juga mendukung _statically typed_, yaitu ketika variable atau fungsi dideklarasikan, tipe data harus dituliskan juga. Berikut tipe data yang dimiliki oleh dart :
 
 - [Numbers(int, double)](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687.md)
 - [Strings(String)](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687.md)
@@ -160,7 +155,7 @@ void main() {
   print(hex);
 }
 
-// output : 
+// output :
 // 1
 // 3735928559
 ```
@@ -178,7 +173,7 @@ void main() {
   print(exponents);
 }
 
-// output : 
+// output :
 // 1.1
 // 142000.0
 ```
@@ -343,7 +338,7 @@ void main() {
 
 # Function
 
-Fungsi digunakan untuk kebutuhan *reusable* berdasar input(parameter) tertentu yang disesuaikan dengan implementasinya. Fungsi-fungsi lain akan dipanggil didalam fungsi `main`. Berikut adalah contoh dari penerapan fungsi :
+Fungsi digunakan untuk kebutuhan _reusable_ berdasar input(parameter) tertentu yang disesuaikan dengan implementasinya. Fungsi-fungsi lain akan dipanggil didalam fungsi `main`. Berikut adalah contoh dari penerapan fungsi :
 
 ```dart
 void main() {
@@ -400,7 +395,6 @@ void enableFlag({bool? hidden}) {
 ```
 
 > Selain type data pada variable, type data pada function yang merujuk pada nilai kembalian juga bisa menggunakan null safety yang ditandai penggunaan tanda tanya( ? ).
-> 
 
 ### **Optional positional parameters**
 
@@ -455,7 +449,7 @@ String say(String from, String msg, [String device = 'carrier pigeon']) {
 
 [Arithmetic operators](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Arithmetic%20operators%20968fe25c04a845e28a4634f0388e1d57.csv)
 
-Contoh : 
+Contoh :
 
 ```dart
 void main() {
@@ -473,7 +467,7 @@ void main() {
 // Hasil dari pengurangan 2 dan 1 adalah 1
 ```
 
-Penjelasan : 
+Penjelasan :
 
 ```dart
 int penjumlahan = x + y;
@@ -500,13 +494,12 @@ print("Hasil dari pengurangan $y dan $x adalah $pengurangan");
 Kondisi ini digunakan untuk meringkas penggunaan `if` dan `else`
 
 > condition ? true : false
-> 
 
 ```dart
 var visibility = isPublic ? 'public' : 'private';
 ```
 
-- Jika `isPublic` true, maka variable visibility memiliki nilai  `‘public’` tetapi jika `isPublic` false, maka visibility memiliki nilai `‘private’`
+- Jika `isPublic` true, maka variable visibility memiliki nilai `‘public’` tetapi jika `isPublic` false, maka visibility memiliki nilai `‘private’`
 
 ```dart
 String playerName(String? name) => name ?? 'Guest';
@@ -518,7 +511,7 @@ String playerName(String? name) => name ?? 'Guest';
 
 Notasi ini memungkinkan kitauntuk membuat urutan operasi pada objek yang sama.
 
-Dari pada kita menulis kode seperti ini : 
+Dari pada kita menulis kode seperti ini :
 
 ```dart
 var paint = Paint();
@@ -527,7 +520,7 @@ paint.strokeCap = StrokeCap.round;
 paint.strokeWidth = 5.0;
 ```
 
-Lebih baik kita tuliskan seperti ini : 
+Lebih baik kita tuliskan seperti ini :
 
 ```dart
 var paint = Paint()
@@ -559,7 +552,7 @@ void main() {
 // Lulus
 ```
 
-Penjelasan : 
+Penjelasan :
 
 ```dart
 if (x >= 10) {
@@ -590,7 +583,7 @@ void main() {
 // Tidak Lulus
 ```
 
-Penjelasan : 
+Penjelasan :
 
 ```dart
 else if (x < 10) {
@@ -602,7 +595,7 @@ else if (x < 10) {
 
 ## For loops
 
-`for` digunakan untuk mengulang sebanyak apa nilai tertentu dapat ditampilkan. Jika dibandingkan dengan cara manual, yaitu ditulis satu-satu seperti ini : 
+`for` digunakan untuk mengulang sebanyak apa nilai tertentu dapat ditampilkan. Jika dibandingkan dengan cara manual, yaitu ditulis satu-satu seperti ini :
 
 ```dart
 void main() {
@@ -634,7 +627,7 @@ void main() {
 // 3
 ```
 
-Penjelasan : 
+Penjelasan :
 
 - `int i = 1` digunakan untuk batas atau nilai awal
 - `i <= 3` digunakan untuk batas akhir dari perulangan
@@ -644,7 +637,7 @@ Penjelasan :
 
 ### While
 
-Perulangan `while` kurang lebih sama, tujuannya yaitu untuk mengulang sebanyak apa suatu data bisa di tampilkan. Jalankan kode berikut : 
+Perulangan `while` kurang lebih sama, tujuannya yaitu untuk mengulang sebanyak apa suatu data bisa di tampilkan. Jalankan kode berikut :
 
 ```dart
 void main() {
@@ -664,7 +657,7 @@ void main() {
 
 ### Do-while
 
-Bentuk lain dari `while` adalah do-while yang dimana do-while sendiri akan menjalankan kodenya dulu setidaknya sekali baru di cek apakah kondisi di dalam `while` terpenuhi atau tidak. Jalankan kode berikut : 
+Bentuk lain dari `while` adalah do-while yang dimana do-while sendiri akan menjalankan kodenya dulu setidaknya sekali baru di cek apakah kondisi di dalam `while` terpenuhi atau tidak. Jalankan kode berikut :
 
 ```dart
 void main() {
@@ -736,7 +729,7 @@ void main() {
 
 ## Switch case
 
-`switch case` digunakan untuk mengecek suatu variable atau nilai tertentu apakah sesuai dengan `case` yang ada. Jalankan kode berikut : 
+`switch case` digunakan untuk mengecek suatu variable atau nilai tertentu apakah sesuai dengan `case` yang ada. Jalankan kode berikut :
 
 ```dart
 void main() {
@@ -810,7 +803,7 @@ Penjelasan :
 
 # Null Safety
 
-Null safety hadir dalam pada dart versi 2.12.0 yang membolehkan suatu variable bernilai kosong atau `null`. Null safety hadir untuk menghindari kesalahan program, yaitu Null Pointer Exception(NPE). Berikut perbandingannya : 
+Null safety hadir dalam pada dart versi 2.12.0 yang membolehkan suatu variable bernilai kosong atau `null`. Null safety hadir untuk menghindari kesalahan program, yaitu Null Pointer Exception(NPE). Berikut perbandingannya :
 
 ```dart
 void main() {
@@ -822,7 +815,7 @@ void main() {
 
 Kode diatas akan memberikan tanda peringatan kalau nilai dari variable number tidak boleh `null` dan harus diisi oleh suatu nilai sebelum digunakan.
 
-![Untitled](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Untitled%201.png)
+![](assets/Untitled%201.png)
 
 Sebaliknya jika kita tulis seperti ini :
 
@@ -848,7 +841,7 @@ Selengkapnya seputar null safety : [https://dart.dev/null-safety](https://dart.d
 
 ## Class
 
-Class merupakan sebuah cetak biru(blueprint) yang berisi attribut dan kebiasaan(behaviour) dari suatu objek. Contoh : 
+Class merupakan sebuah cetak biru(blueprint) yang berisi attribut dan kebiasaan(behaviour) dari suatu objek. Contoh :
 
 ```dart
 class Person {
@@ -876,7 +869,7 @@ void main() {
 
 ## Properties
 
-Dart tidak memiliki access modifier seperti di bahasa java, baik itu access modifier di class, function(method) ataupun di variable. Akan tetapi, variable di dart bisa menambahkan tanda underscore( _ ) sebagai penanda itu adalah *private*, seperti pada kode berikut : 
+Dart tidak memiliki access modifier seperti di bahasa java, baik itu access modifier di class, function(method) ataupun di variable. Akan tetapi, variable di dart bisa menambahkan tanda underscore( \_ ) sebagai penanda itu adalah _private_, seperti pada kode berikut :
 
 ```dart
 String name = '';
@@ -889,7 +882,7 @@ Method adalah fungsi yang berada di dalam class. Method berisi perilaku dari sua
 
 ```dart
 // method student
-void student() { 
+void student() {
 	print('Nama\t: $name');
   print('NIM\t: $nim');
 }
@@ -897,7 +890,7 @@ void student() {
 
 ## Constructor
 
-Constructor merupakan method yang akan memberikan nilai awal pada saat objek dibuat. 
+Constructor merupakan method yang akan memberikan nilai awal pada saat objek dibuat.
 
 ```dart
 class Person {
@@ -908,7 +901,7 @@ class Person {
 }
 ```
 
-Penjelasan : 
+Penjelasan :
 
 - Nama method harus sama dengan nama `class` dan diawali dengan huruf besar seperti `class`
 - Keyword `this` merujuk pada instance saat ini, yaitu Person
@@ -916,9 +909,9 @@ Penjelasan :
 
 ## Inheritance
 
-Inheritance adalah konsep pewarisan dari suatu `class` yang menurunkan property dan methodnya ke `class` lain. class turunan disebut dengan *subclass* dan `class` yang menurunkan disebut *superclass*.
+Inheritance adalah konsep pewarisan dari suatu `class` yang menurunkan property dan methodnya ke `class` lain. class turunan disebut dengan _subclass_ dan `class` yang menurunkan disebut _superclass_.
 
-Buat file parent.dart dan masukan kode berikut : 
+Buat file parent.dart dan masukan kode berikut :
 
 ```dart
 class Parent {
@@ -951,7 +944,7 @@ class Sub extends Parent {
 }
 ```
 
-Buat file main.dart, masukkan dan jalankan kode berikut : 
+Buat file main.dart, masukkan dan jalankan kode berikut :
 
 ```dart
 import 'sub.dart'; // import class sub
@@ -1038,7 +1031,7 @@ void main() {
 
 ## Enumeration
 
-Enum adalah jenis `class` khusus yang digunakan untuk mewakili sejumlah nilai konstanta yang tetap. Jalankan kode berikut : 
+Enum adalah jenis `class` khusus yang digunakan untuk mewakili sejumlah nilai konstanta yang tetap. Jalankan kode berikut :
 
 ```dart
 enum alphabet { A, B, C }
@@ -1091,9 +1084,9 @@ void main() {
 
 # Dart Future
 
-Dart future digunakan untuk operasi yang bersifat Asynchronous. Berikut adalah diagram ilustrasi perbedaan synchronous dan asynchronous : 
+Dart future digunakan untuk operasi yang bersifat Asynchronous. Berikut adalah diagram ilustrasi perbedaan synchronous dan asynchronous :
 
-![Group 7.png](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Group_7.png)
+![](assets/Group_7.png)
 
 Jalankan kode berikut :
 
@@ -1119,7 +1112,7 @@ Future<void> main() async {
 // Your order is: Coffe Latte
 ```
 
-Penjelasan : 
+Penjelasan :
 
 - Method fetchUserOrder() digunakan untuk mendapatkan pesanan dari user
 - Method createOrderMessage() digunakan untuk memproses pesanan dari user

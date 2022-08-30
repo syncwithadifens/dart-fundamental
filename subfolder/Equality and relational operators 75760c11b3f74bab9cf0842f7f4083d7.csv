@@ -1,7 +1,0 @@
-﻿Nama operator,Deskripsi,Contoh
-<,Kurang dari,if (i < 3)
->,Lebih dari,if (i > 3)
-<=,Kurang dari sama dengan,if (i <= 3)
->=,Lebih dari sama dengan,if (i >= 3)
-!=,Tidak sama dengan,if (i != 3)
-==,Sama dengan,if (i == 3)
