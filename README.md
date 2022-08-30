@@ -1,4 +1,4 @@
-# PBO Dart
+### Fundamental Dart
 
 # Pendahuluan
 
@@ -447,7 +447,7 @@ String say(String from, String msg, [String device = 'carrier pigeon']) {
 
 # Operator
 
-[Arithmetic operators](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Arithmetic%20operators%20968fe25c04a845e28a4634f0388e1d57.csv)
+![](assets/Screenshot_20220830_105006.png)
 
 Contoh :
 
