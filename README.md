@@ -485,9 +485,8 @@ print("Hasil dari pengurangan $y dan $x adalah $pengurangan");
 - `$x, $y, $pengurangan` digunakan untuk memanggil value dari variable yang dimasukkan langsung dalam `String` dan otomatis di konversi menjadi nilai `String`, ini dinamakan String interpolation.
 - Berbeda dengan `penjumlahan.toString()` yang menggunakan method atau fungsi bawaan dart, yaitu `toString()` untuk mengkonversinya menjadi nilai `String`
 
-[Equality and relational operators](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Equality%20and%20relational%20operators%2075760c11b3f74bab9cf0842f7f4083d7.csv)
-
-[Logical operators](PBO%20Dart%201fe752b88fc44dc986c1cc70db7cf687/Logical%20operators%206f2c9ad969f54eb89debeb0971764fc3.csv)
+![](assets/Screenshot_20220830_105145.png)
+![](assets/Screenshot_20220830_105210.png)
 
 ## Conditional expressions
 
